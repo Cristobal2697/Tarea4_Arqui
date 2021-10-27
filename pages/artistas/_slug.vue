@@ -32,7 +32,7 @@
       Año Nacimiento: {{artista.birth_year}}<br>
 	    Estilos: {{artista.estilos}}<br><br>
 	    <b>Biografía</b><br><br>
-	    <nuxt-content :document="artista" />
+     <span v-html="artista.content"></span>
 	 </div>
 	 <div class="three columns"></div>
 	   <h5>Álbumes</h5>

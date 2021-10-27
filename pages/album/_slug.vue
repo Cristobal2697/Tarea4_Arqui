@@ -26,11 +26,11 @@
 	   Artista: <NuxtLink :to="{ name: 'artistas-slug', params: { slug: album.artistaid } }">{{artista.name}}</NuxtLink><br> 
 
 	   Duración: {{album.duracion}}<br> 
-     Año de publicación: {{album.copyright}}<br>
+     Año de publicación: {{album.copyright}}<br> 
 	   Publicado por <NuxtLink :to="{ name: 'discograficas-slug', params: { slug: album.discograficaid } }">{{discografica.name}}</NuxtLink><br><br>
 
 	   <b>Canciones</b><br>
-	   <nuxt-content :document="album.content" />
+     <span v-html="album.content"></span>
 	 </div>
 	 <div class="two columns"></div>
    </div>

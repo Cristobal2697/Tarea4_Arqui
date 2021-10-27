@@ -32,7 +32,7 @@
         País: {{discografica.country}} <br><br>
 	   
 	    <b>Historia</b><br>
-	    <nuxt-content :document="discografica" />
+     <span v-html="discografica.content"></span>
 	  </div>
 	 <div class="three columns"></div>
 	   <h5>Álbumes Publicados</h5>
